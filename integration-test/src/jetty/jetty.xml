@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+    <New id="myApplicationDs" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/datasource</Arg>
+        <Arg>
+            <New class="org.apache.commons.dbcp.BasicDataSource">
+                <Set name="username">sa</Set>
+                <Set name="password"></Set>
+                <Set name="url">jdbc:hsqldb:hsql://localhost/test</Set>
+                <Set name="driverClassName">org.hsqldb.jdbc.JDBCDriver</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>

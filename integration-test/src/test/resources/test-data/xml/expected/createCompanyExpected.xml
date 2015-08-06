@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dataset SYSTEM "../dataset.dtd">
+<dataset>
+    <company id="1" category="HIGHT_RISK" details="details"
+             email="email@asda.ru" info="info" name="NAME" phone="123123" status="ACTIVE"/>
+</dataset>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dataset SYSTEM "../dataset.dtd">
+<dataset>
+  <users id="123" email="expe@dita.cc" firstname="dolore" lastname="expedita"
+         password="91a73fd806ab2c005c13b4dc19130a884e909dea3f72d46e30266fe1a1f588d8" username="consequatur"/>
+  <user_role user_id="123" role_name="ROLE_COMPANYUSER"/>
+  <user_role user_id="123" role_name="ROLE_USER"/>
+</dataset>

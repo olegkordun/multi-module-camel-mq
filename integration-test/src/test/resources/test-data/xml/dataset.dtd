@@ -1,0 +1,52 @@
+<!ELEMENT dataset (
+
+    company*,
+    users*,
+    user_role*)>
+
+<!ELEMENT company EMPTY>
+<!ATTLIST company
+    id CDATA #REQUIRED
+    category CDATA #REQUIRED
+    details CDATA #REQUIRED
+    email CDATA #REQUIRED
+    info CDATA #REQUIRED
+    name CDATA #REQUIRED
+    phone CDATA #IMPLIED
+    status CDATA #REQUIRED
+>
+
+
+<!ELEMENT schema_version EMPTY>
+<!ATTLIST schema_version
+    version_rank CDATA #REQUIRED
+    installed_rank CDATA #REQUIRED
+    version CDATA #REQUIRED
+    description CDATA #REQUIRED
+    type CDATA #REQUIRED
+    script CDATA #REQUIRED
+    checksum CDATA #IMPLIED
+    installed_by CDATA #REQUIRED
+    installed_on CDATA #IMPLIED
+    execution_time CDATA #REQUIRED
+    success CDATA #REQUIRED
+>
+
+<!ELEMENT users EMPTY>
+<!ATTLIST users
+    id CDATA #REQUIRED
+    comment CDATA #IMPLIED
+    email CDATA #REQUIRED
+    firstname CDATA #IMPLIED
+    lastname CDATA #IMPLIED
+    password CDATA #REQUIRED
+    company_id CDATA #IMPLIED
+    username CDATA #IMPLIED
+>
+
+<!ELEMENT user_role EMPTY>
+<!ATTLIST user_role
+    user_id CDATA #REQUIRED
+    role_name CDATA #REQUIRED
+>
+

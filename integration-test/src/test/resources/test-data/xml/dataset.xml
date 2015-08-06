@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<dataset>
+
+  <company id="1" category="LOW_RISK" details="Some details" email="asdas@asdas.ru" info="Info" name="Mspay LLC" phone="123123" status="ACTIVE"/>
+  <users id="1" email="asd@asd.ru"
+         password="a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"
+        firstname="firstname" lastname="lastname" comment="comment" username="user"/>
+  <users id="2" email="asd@asd.ru"
+         password="a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"
+         firstname="firstname" lastname="lastname" comment="comment" username="admin"/>
+  <user_role user_id="1" role_name="ROLE_COMPANYUSER"/>
+  <user_role user_id="2" role_name="ROLE_ADMIN"/>
+</dataset>

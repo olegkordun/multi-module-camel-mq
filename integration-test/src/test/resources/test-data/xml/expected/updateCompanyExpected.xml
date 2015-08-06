@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dataset SYSTEM "../dataset.dtd">
+<dataset>
+  <company id="1" category="HIGHT_RISK" details="details new" email="new@new.ru" info="info new" name="NAME new" phone="123123 new" status="BLOCKED"/>
+ </dataset>
