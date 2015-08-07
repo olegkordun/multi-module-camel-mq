@@ -33,8 +33,14 @@ Uses Flywaydb to organise and deploy database migrations (useful for some contin
 Functional segregation of modules simplifies creation of new applications. E.g. new application for the backend can use existing persistent
 module. Also MQ connection between modules could be provided with just one messaging block. Etc.
 
+# Unit tests
+Few unit tests written in office-frontend module. Mockito and spring mvc test frameworks are used.
+
 # Integration tests
-Starts embedded Jetty, HSQLDB, ActiveMQ on "mvn verify".
+It's hard to test multi component project with just unit tests. I found much easier way - integration tests with all components involved.
+
+This sub-project starts embedded Jetty, HSQLDB, ActiveMQ on "mvn verify".
+
 Backend is deployed to Jetty with HSQLDB instance at the beginning.
 Then Flywaydb apply sql migrations and creates database structure.
 Each integration test cleans up the DB and inserts data from test data sets.
@@ -42,5 +48,3 @@ Tests both backend and front REST services using Rest Assured and DbUnit.
 After REST-services call database is compared with expected data set.
 No need of any external database, MQ broker or any manual configuration.
 
-# Unit tests
-Few unit tests written in office-frontend module. Mockito and spring mvc test frameworks are used.
