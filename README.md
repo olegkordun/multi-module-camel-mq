@@ -30,8 +30,8 @@ Uses Flywaydb to organise and deploy database migrations (useful for some contin
 
 ![Modules structure](./images/modules.png)
 
-Functional segregation of modules simplifies creation of new modules. E.g. other modules for backend using existing persistent
-module. MQ connection between modules could be provided with just one messaging block. Etc.
+Functional segregation of modules simplifies creation of new applications. E.g. new application for the backend can use existing persistent
+module. Also MQ connection between modules could be provided with just one messaging block. Etc.
 
 # Integration tests
 Starts embedded Jetty, HSQLDB, ActiveMQ on "mvn verify".
