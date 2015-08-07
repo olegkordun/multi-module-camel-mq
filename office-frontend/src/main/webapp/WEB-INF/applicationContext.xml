@@ -18,5 +18,4 @@
        <camelContext xmlns="http://camel.apache.org/schema/spring" id="camel"  allowUseOriginalMessage="false">
               <package>me.kordun.office.front</package>
        </camelContext>
-
 </beans>

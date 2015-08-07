@@ -5,7 +5,7 @@ import org.apache.camel.builder.RouteBuilder;
 
 public class BackendRouteBuilder extends RouteBuilder {
     /**
-     * Building routes from query to service bean
+     * Building routes from queue to service bean
      */
     @Override
     public void configure() throws Exception {

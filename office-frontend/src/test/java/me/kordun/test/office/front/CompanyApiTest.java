@@ -17,14 +17,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MvcResult;
-
 import javax.annotation.Resource;
-import java.util.UUID;
-
 import static me.kordun.test.office.front.TestUtil.convertObjectToJsonBytes;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -40,9 +36,7 @@ public class CompanyApiTest extends BaseTest {
     @Resource
     private CompanyController companyController;
 
-
     private CompanyJson json = null;
-
 
     @Before
     public void setUp() {
